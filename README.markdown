@@ -38,6 +38,7 @@ var tbl = new DynamicModel("northwind", tableName:"Products", primaryKeyField:"P
 Or ignore the object hierarchy altogether:
 	
 ```csharp
+//you might need to add <clear/> to your <connectionStrings> in app.config to remove LocalSqlServer from the connectionStrings collection 
 Massive.DB.Current.Query(...);
 ```
 
